@@ -1,13 +1,6 @@
 import prof from './Post.module.css';
 
-const likeButton = document.getElementById('likeButton');
-const likeCount = document.getElementById('likeCount');
-let count = 0;
-likeButton.addEventListener('click',function(){
-  count++;
-  likeCount.textContent = count;
-  console.log(likeCount)
-})
+
 
 const Post = (props) => {
   
@@ -20,9 +13,11 @@ const Post = (props) => {
       {props.message}
       <div>
         <button id="likeButton">Like</button>
-        <span id="likeCount">0</span> Likes        
+        <span id="likeCount">0</span> Likes    
+          
       </div>
     </div>
+    
   );
   
 };

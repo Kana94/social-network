@@ -1,8 +1,31 @@
 .nav {
-    grid-area: n;
-    background-color: yellow;
-  }
+  grid-area: n;
+  background-color: yellow;
+}
 
-  .item {
-    color: white;
+
+.item a {
+  color: blue;
+  /* цвет ссылки */
+  text-decoration: none;
+  /* убираем подчеркивание */
+}
+
+/* Стили при наведении */
+.item a:hover {
+  color: red;
+  /* цвет ссылки при наведении */
+  background-color: yellow;
+  /* фон ссылки при наведении */
+}
+
+/* Стили при активации */
+.item a:active {
+  color: green;
+  /* цвет ссылки при активации (нажатии) */
+  background-color: orange;
+  /* фон ссылки при активации (нажатии) */
+}
+.item a:focus {
+  color: gold;
   }

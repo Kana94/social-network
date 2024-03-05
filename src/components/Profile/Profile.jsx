@@ -1,13 +1,14 @@
 import prof from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
-const Profile = () => {
+import ProfileInfo from './ProfileInfo/ProfileInfo';
+const Profile = (props) => {
+  
   return (
-    <div className={prof.content}>
-      <div>
-        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" />
-      </div>
-      <div>ava + description</div>
-      <MyPosts/>
+    
+    <div >
+      <ProfileInfo />
+
+      <MyPosts postData = {props.postData} />
     </div>
   );
 };
